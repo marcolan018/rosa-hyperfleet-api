@@ -373,6 +373,12 @@ func (h *ClusterHandler) Update(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if errs := h.validator.ValidateUpdate(rawSpec, &cr.Spec, featuregate.Default); errs != nil {
+		h.logger.Warn("cluster update validation failed",
+			"account_id", accountID,
+			"cluster_id", clusterID,
+			"validation_errors", errs.Error(),
+			"submitted_spec_fields", rawSpec,
+		)
 		writeAPIError(w, ErrClusterValidation.WithErrors(errs), h.logger)
 		return
 	}
