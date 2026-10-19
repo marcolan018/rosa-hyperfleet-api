@@ -1,5 +1,19 @@
 # Changes
 
+## 0.1.19 Oct 19 2026
+
+- Rename ROSA HyperFleet to ROSA Seaplane
+- chore(clientset): bump version to clientset/v0.1.20
+- feat: add resettable pathbind updates
+- ROSAENG-68200 | feat: mark ipv4 subnet as immutable to match hypershift
+- ROSAENG-68169 | feat: include imds knob support for nps
+- ROSAENG-68177: feat: expose capabilities via mirror type
+- chore(clientset): bump version to clientset/v0.1.19
+- chore: adjust pathbind templates
+- ROSAENG-67909 | feat: identity-flip - client-supplied name + account namespace
+- ROSAENG-65211 | chore: Enable windowsLI for v2
+
+
 ## 0.1.20 Oct 16 2026
 
 - feat: add resettable pathbind updates
