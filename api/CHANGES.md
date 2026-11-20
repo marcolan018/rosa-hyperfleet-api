@@ -1,5 +1,14 @@
 # Changes
 
+## 0.1.29 Nov 20 2026
+
+- feat: manage default ingress DNS and serving cert for hosted clusters
+- chore: bump to k8s 0.37 and pin released openshift/hypershift deps
+- chore(api): bump version to api/v0.1.29
+- Remove Manifest API/controller and dead k8s RBAC scaffold
+- added more testing of ECR env variables, fixed write-mode of ImageContainerSources
+
+
 ## 0.1.29 Nov 12 2026
 
 - Remove Manifest API/controller and dead k8s RBAC scaffold
